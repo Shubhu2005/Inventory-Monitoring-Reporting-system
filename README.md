@@ -1,41 +1,34 @@
-📦 Inventory Monitoring System
-🧠 Overview
+# 📦 Inventory Monitoring System
 
-The Inventory Monitoring System is a Java-based console application designed to help businesses efficiently manage their stock, track inventory levels, and receive real-time email alerts when product quantities fall below their defined thresholds.
+## 🧠 Overview  
+The **Inventory Monitoring System** is a Java-based console application designed to help businesses efficiently manage stock, track product inventory, and receive **real-time email alerts** when quantities fall below their defined thresholds.
 
-It supports admin and user roles, secure authentication, CSV report generation, and an automatic stock alert service that periodically monitors product levels and notifies the logged-in user.
+It supports **admin and user roles**, **secure login with email verification**, **CSV report generation**, and an **automatic stock alert service** that runs in the background after login.
 
-🚀 Features
-👤 User Management
 
-Signup with email verification (OTP-based)
+## 🚀 Features
 
-Secure login with role-based access (Admin/User)
+### 👤 User Management  
+- Signup with OTP-based email verification  
+- Secure login with role-based access (Admin/User)  
+- Email verification required before login  
 
-Email verification before login
+### 📦 Inventory Management  
+- Add, update, remove, and view products  
+- Set **custom stock threshold** per product  
+- Filter products by price range  
+- Generate and email CSV reports of all products  
 
-📦 Inventory Management
+### 🔔 Stock Alert Service  
+- Automatically starts after user login  
+- Checks stock levels every 5 minutes  
+- Sends email alerts when quantity ≤ threshold  
+- Works for both Admin and User roles  
 
-Add, update, remove, and view products
+### 📧 Email Notifications  
+- Sends OTP during signup verification  
+- Sends low-stock alerts and inventory reports  
+- Configurable via Mailtrap or Gmail SMTP  
 
-Set individual stock threshold for each product
+---
 
-Filter products by price range
-
-Generate and email CSV reports of all products
-
-🔔 Stock Alert Service
-
-Runs in the background after login
-
-Checks product stock every 5 minutes
-
-Sends email notifications to the currently logged-in user if stock falls below the product threshold
-
-Automatically stops when the user logs out
-
-📧 Email Notifications
-
-Uses Java Mail for OTP and stock alert emails
-
-Sends formatted alerts and reports directly to registered user emails
